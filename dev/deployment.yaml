@@ -10,10 +10,7 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    
+
   - name: whalesay-container
     image: docker/whalesay
     command: ["/bin/bash", "-c"]
-    args:
-    - |
-      echo "hello world" | cowsay
