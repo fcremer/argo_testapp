@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: ginxdemos/hello
+    image: nginxdemos/hello
     ports:
     - containerPort: 80
