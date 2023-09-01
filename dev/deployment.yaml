@@ -7,10 +7,6 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: nginx
+    image: ginxdemos/hello
     ports:
     - containerPort: 80
-
-  - name: whalesay-container
-    image: docker/whalesay
-    command: ["/bin/bash", "-c"]
