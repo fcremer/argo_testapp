@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-whalesay-pod
+  labels:
+    purpose: demonstrate-multi-container
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+    ports:
+    - containerPort: 80
+    
+  - name: whalesay-container
+    image: docker/whalesay
+    command: ["/bin/bash", "-c"]
+    args:
+    - |
+      echo "hello world" | cowsay
